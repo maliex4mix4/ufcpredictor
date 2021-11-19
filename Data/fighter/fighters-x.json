@@ -1,0 +1,38 @@
+[
+  {
+    "fname": "Rubens",
+    "lname": "Xavier",
+    "nname": "Macula",
+    "height": "6' 3\"",
+    "weight": "220 lbs.",
+    "reach": "--",
+    "stance": "Orthodox",
+    "win": "5",
+    "lose": "3",
+    "draw": "0"
+  },
+  {
+    "fname": "Xiao",
+    "lname": "Long",
+    "nname": null,
+    "height": "5' 8\"",
+    "weight": "135 lbs.",
+    "reach": "66.0\"",
+    "stance": "Orthodox",
+    "win": "16",
+    "lose": "7",
+    "draw": "0"
+  },
+  {
+    "fname": "Xie",
+    "lname": "Bin",
+    "nname": "The Stalker",
+    "height": "5' 10\"",
+    "weight": "145 lbs.",
+    "reach": "72.0\"",
+    "stance": "Orthodox",
+    "win": "8",
+    "lose": "3",
+    "draw": "0"
+  }
+]
