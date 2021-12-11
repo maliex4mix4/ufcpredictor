@@ -45,7 +45,11 @@ class StreamlitApp:
 		return fig
 
 	def construct_app(self):
-		st.set_page_config(layout="wide")
+		st.set_page_config(
+	        page_title="Predictor",
+	        page_icon="chart_with_upwards_trend",
+	        layout="wide"
+	    )
 		st.markdown(
 			'<h1 class="header-style" style="text-align: center;"> UFC Predictor </h1>',
 			unsafe_allow_html=True
