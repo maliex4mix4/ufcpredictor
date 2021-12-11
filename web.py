@@ -147,7 +147,7 @@ class StreamlitApp:
 				# st.write(pred)
 				col1, col2 = st.columns(2)
 
-				pred_winner = "Underdog" if d_pred[0] == 0 else 1
+				pred_winner = "Underdog" if d_pred[0] == 0 else "Favourite"
 
 				title_match = 0 if fighter_t == False else 1
 
@@ -238,12 +238,12 @@ class StreamlitApp:
 				)
 
 				st.markdown(
-					f'<h3 class="header-style" style="text-align: center; color: white;"> Break Down Analysis </h3>',
+					f'<h3 class="header-style" style="text-align: center; color: green;"> Break Down Analysis </h3>',
 					unsafe_allow_html=True
 				)
 
 				st.markdown(
-					f'<p style="text-align: center; color: white;">The <strong>{pred_winner}</strong> will most likely win by <strong>{map_method[pred2[0]]}</strong> in round <strong>{pred3[0]}</strong>.<br/> <b>Note</b> that this result is just based on speculation and you shouldn"t bet your money based on this alone.</p>',
+					f'<p style="text-align: center; color: green;">The <strong>{pred_winner}</strong> will most likely win by <strong>{map_method[pred2[0]]}</strong> in round <strong>{pred3[0]}</strong>.<br/> <b>Note</b> that this result is just based on speculation and you shouldn"t bet your money based on this alone.</p>',
 					unsafe_allow_html=True
 				)
 
