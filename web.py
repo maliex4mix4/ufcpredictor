@@ -13,7 +13,7 @@ class StreamlitApp:
 
 	def __init__(self):
 		self.fighters = pd.read_csv('Data/UFC_Fighters_Database.csv')
-		self.fighters2 = pd.read_csv('Data/ufc_fighters.csv')
+		self.fighters2 = pd.read_csv('Data/fighters.csv')
 		self.df2 = pd.read_csv('Data/prediction_data.csv', index_col="Unnamed: 0")
 
 	def load_models(self):
@@ -66,12 +66,12 @@ class StreamlitApp:
 
 		fighter1 = col1.selectbox(
 			'Select Your Favourite Fighter',
-			self.fighters['NAME']
+			self.fighters2['name']
 		)
 
 		fighter2 = col2.selectbox(
 			'Select The Underdog Fighter',
-			self.fighters['NAME']
+			self.fighters2['name']
 		)
 
 		## weight class
@@ -118,23 +118,23 @@ class StreamlitApp:
 					'<h1 class="header-style" style="text-align: center;"> Prediction Results </h1>',
 					unsafe_allow_html=True
 				)
-				data1 = self.fighters[self.fighters.NAME == fighter1]
-				data2 = self.fighters[self.fighters.NAME == fighter2]
+				data1 = self.fighters2[self.fighters2.name == fighter1]
+				data2 = self.fighters2[self.fighters2.name == fighter2]
 
 				columns = ['REACH_delta','SLPM_delta','SAPM_delta','STRA_delta','STRD_delta','TD_delta','TDA_delta','TDD_delta','SUBA_delta','Odds_delta']
 				best_cols = ['SLPM_delta', 'SAPM_delta', 'STRD_delta', 'TDD_delta', 'SUBA_delta', 'Odds_delta']
 
 				df = pd.DataFrame(
 						[
-							[float(data1.REACH)-float(data2.REACH),
-								float(data1.SLPM)-float(data2.SLPM),
-								float(data1.SAPM)-float(data2.SAPM),
-								float(data1.STRA)-float(data2.STRA),
-								float(data1.STRD)-float(data2.STRD),
-								float(data1.TD)-float(data2.TD),
-								float(data1.TDA)-float(data2.TDA),
-								float(data1.TDD)-float(data2.TDD),
-								float(data1.SUBA)-float(data2.SUBA),
+							[float(data1.reach)-float(data2.reach),
+								float(data1.SLpM)-float(data2.SLpM),
+								float(data1.SApM)-float(data2.SApM),
+								float(data1.Str_Acc)-float(data2.Str_Acc),
+								float(data1.Str_Def)-float(data2.Str_Def),
+								float(data1.TD_Avg)-float(data2.TD_Avg),
+								float(data1.TD_Acc)-float(data2.TD_Acc),
+								float(data1.TD_Def)-float(data2.TD_Def),
+								float(data1.Sub_Avg)-float(data2.Sub_Avg),
 								float(fighter1_odd)-float(fighter2_odd)]
 						],
 						columns=columns
@@ -164,11 +164,11 @@ class StreamlitApp:
 				m_cols = ['winner', 'title_fight', 'SLPM_delta', 'SAPM_delta','STRD_delta', 'TDD_delta', 'SUBA_delta', 'weight_class_Bantamweight','weight_class_Catch Weight', 'weight_class_Featherweight','weight_class_Flyweight', 'weight_class_Heavyweight','weight_class_Light Heavyweight', 'weight_class_Lightweight','weight_class_Middleweight', 'weight_class_Open Weight','weight_class_Super Heavyweight', 'weight_class_Welterweight',"weight_class_Women's Bantamweight","weight_class_Women's Featherweight", "weight_class_Women's Flyweight","weight_class_Women's Strawweight"]
 				fin = [d_pred[0],
 							title_match,
-							float(data1.SLPM)-float(data2.SLPM),
-							float(data1.SAPM)-float(data2.SAPM),
-							float(data1.STRD)-float(data2.STRD),
-							float(data1.TDD)-float(data2.TDD),
-							float(data1.SUBA)-float(data2.SUBA),
+							float(data1.SLpM)-float(data2.SLpM),
+							float(data1.SApM)-float(data2.SApM),
+							float(data1.Str_Def)-float(data2.Str_Def),
+							float(data1.TD_Def)-float(data2.TD_Def),
+							float(data1.Sub_Avg)-float(data2.Sub_Avg),
 						]
 				res = np.array(res)
 				# st.write(res)
@@ -203,11 +203,11 @@ class StreamlitApp:
 				fin = [d_pred[0],
 							title_match,
 							pred2[0],
-							float(data1.SLPM)-float(data2.SLPM),
-							float(data1.SAPM)-float(data2.SAPM),
-							float(data1.STRD)-float(data2.STRD),
-							float(data1.TDD)-float(data2.TDD),
-							float(data1.SUBA)-float(data2.SUBA),
+							float(data1.SLpM)-float(data2.SLpM),
+							float(data1.SApM)-float(data2.SApM),
+							float(data1.Str_Def)-float(data2.Str_Def),
+							float(data1.TD_Def)-float(data2.TD_Def),
+							float(data1.Sub_Avg)-float(data2.Sub_Avg),
 						]
 				res = np.array(res)
 				# st.write(res)
