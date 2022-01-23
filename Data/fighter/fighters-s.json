@@ -43,7 +43,7 @@
     "weight": "145 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "15",
+    "win": "16",
     "lose": "3",
     "draw": "0"
   },
@@ -164,7 +164,7 @@
     "reach": "77.0\"",
     "stance": "Orthodox",
     "win": "15",
-    "lose": "3",
+    "lose": "4",
     "draw": "1"
   },
   {
@@ -884,7 +884,7 @@
     "reach": "75.0\"",
     "stance": "Orthodox",
     "win": "18",
-    "lose": "5",
+    "lose": "6",
     "draw": "1"
   },
   {
@@ -943,7 +943,7 @@
     "weight": "125 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
-    "win": "18",
+    "win": "19",
     "lose": "1",
     "draw": "0"
   },
@@ -1228,11 +1228,11 @@
     "lname": "Sayles",
     "nname": null,
     "height": "5' 7\"",
-    "weight": "145 lbs.",
+    "weight": "155 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
     "win": "8",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -1436,7 +1436,7 @@
     "reach": "70.0\"",
     "stance": "Orthodox",
     "win": "15",
-    "lose": "6",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1892,7 +1892,7 @@
     "reach": "74.0\"",
     "stance": "Orthodox",
     "win": "11",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -1964,7 +1964,7 @@
     "reach": "63.0\"",
     "stance": "Orthodox",
     "win": "32",
-    "lose": "7",
+    "lose": "8",
     "draw": "0"
   },
   {
@@ -2012,7 +2012,7 @@
     "reach": "78.0\"",
     "stance": "Orthodox",
     "win": "15",
-    "lose": "8",
+    "lose": "9",
     "draw": "0"
   },
   {
@@ -2551,7 +2551,7 @@
     "weight": "185 lbs.",
     "reach": "74.0\"",
     "stance": "Orthodox",
-    "win": "21",
+    "win": "22",
     "lose": "6",
     "draw": "0"
   },
@@ -2695,7 +2695,7 @@
     "weight": "135 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "18",
+    "win": "19",
     "lose": "3",
     "draw": "0"
   },
@@ -3188,7 +3188,7 @@
     "reach": "68.0\"",
     "stance": "Orthodox",
     "win": "17",
-    "lose": "7",
+    "lose": "8",
     "draw": "0"
   },
   {
@@ -3343,7 +3343,7 @@
     "weight": "135 lbs.",
     "reach": "67.0\"",
     "stance": "Orthodox",
-    "win": "17",
+    "win": "18",
     "lose": "5",
     "draw": "1"
   },
@@ -3400,11 +3400,11 @@
     "lname": "Soriano",
     "nname": null,
     "height": "5' 9\"",
-    "weight": "155 lbs.",
+    "weight": "145 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
     "win": "14",
-    "lose": "7",
+    "lose": "8",
     "draw": "0"
   },
   {
@@ -3596,7 +3596,7 @@
     "reach": "70.0\"",
     "stance": "Orthodox",
     "win": "10",
-    "lose": "1",
+    "lose": "2",
     "draw": "0"
   },
   {
@@ -3703,7 +3703,7 @@
     "weight": "145 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
-    "win": "8",
+    "win": "9",
     "lose": "3",
     "draw": "0"
   },
@@ -3884,7 +3884,7 @@
     "reach": "64.0\"",
     "stance": "Orthodox",
     "win": "19",
-    "lose": "4",
+    "lose": "5",
     "draw": "1"
   },
   {
@@ -4256,7 +4256,7 @@
     "reach": "75.0\"",
     "stance": "Orthodox",
     "win": "13",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -4747,7 +4747,7 @@
     "weight": "145 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "27",
+    "win": "28",
     "lose": "12",
     "draw": "0"
   },

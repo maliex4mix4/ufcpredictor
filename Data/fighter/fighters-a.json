@@ -595,7 +595,7 @@
     "weight": "135 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "30",
+    "win": "31",
     "lose": "7",
     "draw": "0"
   },
@@ -715,7 +715,7 @@
     "weight": "145 lbs.",
     "reach": "73.0\"",
     "stance": "Switch",
-    "win": "14",
+    "win": "15",
     "lose": "6",
     "draw": "0"
   },
@@ -764,7 +764,7 @@
     "reach": "75.0\"",
     "stance": "Orthodox",
     "win": "13",
-    "lose": "6",
+    "lose": "7",
     "draw": "0"
   },
   {
@@ -800,7 +800,7 @@
     "reach": "75.0\"",
     "stance": "Orthodox",
     "win": "17",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1015,7 +1015,7 @@
     "weight": "155 lbs.",
     "reach": "77.0\"",
     "stance": "Orthodox",
-    "win": "18",
+    "win": "19",
     "lose": "2",
     "draw": "0"
   },
@@ -1075,7 +1075,7 @@
     "weight": "155 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
-    "win": "19",
+    "win": "20",
     "lose": "10",
     "draw": "0"
   },
@@ -1220,7 +1220,7 @@
     "reach": "75.0\"",
     "stance": "Southpaw",
     "win": "14",
-    "lose": "5",
+    "lose": "6",
     "draw": "0"
   },
   {
@@ -1388,7 +1388,7 @@
     "reach": "71.0\"",
     "stance": "Orthodox",
     "win": "8",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -1508,7 +1508,7 @@
     "reach": "69.0\"",
     "stance": "Orthodox",
     "win": "18",
-    "lose": "7",
+    "lose": "9",
     "draw": "0"
   },
   {
@@ -1604,7 +1604,7 @@
     "reach": "70.0\"",
     "stance": "Southpaw",
     "win": "17",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1928,7 +1928,7 @@
     "reach": "66.0\"",
     "stance": "Orthodox",
     "win": "27",
-    "lose": "8",
+    "lose": "9",
     "draw": "0"
   },
   {

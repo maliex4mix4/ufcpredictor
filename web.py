@@ -6,7 +6,10 @@ import pickle
 from PIL import Image
 import plotly.graph_objects as go
 import plotly.express as px
-
+from threading import Thread, current_thread
+from time import sleep
+from subprocess import call, DEVNULL
+from sources import data_preparations
 
 
 class StreamlitApp:
@@ -249,5 +252,38 @@ class StreamlitApp:
 
 		return self
 
-sa = StreamlitApp()
-sa.construct_app()
+
+def data_refresher_function(arg):
+	t = current_thread()
+	# Thread is alive by default
+	t.alive = True
+
+	while True:
+		if not t.alive:
+			break
+		
+		print("UPDATING FIGHTERS\n..............................................................")
+		call("python ufcscraper.py", stdout=DEVNULL, stderr=DEVNULL)
+		print("COMPLETED\n..............................................................")
+
+		print("PREPARING DATA\n..............................................................")
+		call("python sources/data_preparations.py", stdout=DEVNULL, stderr=DEVNULL)
+		print("COMPLETED\n..............................................................")
+
+		# Wait for 12hours
+		sleep(43200)
+
+
+data_refresher = Thread(target = data_refresher_function, args = (10, ))
+data_refresher.daemon = True
+
+try:
+	data_refresher.start()
+
+	sa = StreamlitApp()
+	sa.construct_app()
+	
+	# data_refresher.join()
+except Exception as e:
+	data_refresher.alive = False
+	sys.exit(e)

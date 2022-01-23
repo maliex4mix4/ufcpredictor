@@ -9,3 +9,4 @@ sklearn==0.0
 tenacity==8.0.1
 threadpoolctl==3.0.0
 streamlit
+Scrapy

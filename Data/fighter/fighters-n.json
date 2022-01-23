@@ -211,7 +211,7 @@
     "weight": "115 lbs.",
     "reach": "65.0\"",
     "stance": "Orthodox",
-    "win": "11",
+    "win": "12",
     "lose": "4",
     "draw": "0"
   },
@@ -451,7 +451,7 @@
     "weight": "170 lbs.",
     "reach": "75.0\"",
     "stance": "Southpaw",
-    "win": "13",
+    "win": "14",
     "lose": "4",
     "draw": "0"
   },
@@ -667,7 +667,7 @@
     "weight": "250 lbs.",
     "reach": "83.0\"",
     "stance": "Orthodox",
-    "win": "16",
+    "win": "17",
     "lose": "3",
     "draw": "0"
   },
@@ -1099,7 +1099,7 @@
     "weight": "145 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "19",
+    "win": "20",
     "lose": "7",
     "draw": "0"
   },
@@ -1118,13 +1118,13 @@
   {
     "fname": "Amanda",
     "lname": "Nunes",
-    "nname": "Lioness",
+    "nname": "The Lioness",
     "height": "5' 8\"",
-    "weight": "145 lbs.",
+    "weight": "135 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
     "win": "21",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1183,7 +1183,7 @@
     "weight": "135 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "14",
+    "win": "15",
     "lose": "2",
     "draw": "0"
   },
@@ -1220,7 +1220,7 @@
     "reach": "83.0\"",
     "stance": "Southpaw",
     "win": "9",
-    "lose": "1",
+    "lose": "2",
     "draw": "0"
   }
 ]

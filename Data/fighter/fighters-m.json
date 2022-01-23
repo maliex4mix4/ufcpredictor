@@ -451,7 +451,7 @@
     "weight": "155 lbs.",
     "reach": "71.0\"",
     "stance": "Orthodox",
-    "win": "5",
+    "win": "6",
     "lose": "1",
     "draw": "0"
   },
@@ -500,7 +500,7 @@
     "reach": "64.0\"",
     "stance": "Orthodox",
     "win": "19",
-    "lose": "7",
+    "lose": "8",
     "draw": "1"
   },
   {
@@ -1088,7 +1088,7 @@
     "reach": "63.0\"",
     "stance": "Orthodox",
     "win": "7",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1484,7 +1484,7 @@
     "reach": "65.0\"",
     "stance": "Southpaw",
     "win": "11",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -1543,7 +1543,7 @@
     "weight": "260 lbs.",
     "reach": "81.0\"",
     "stance": "Orthodox",
-    "win": "8",
+    "win": "9",
     "lose": "4",
     "draw": "0"
   },
@@ -1855,7 +1855,7 @@
     "weight": "170 lbs.",
     "reach": "75.0\"",
     "stance": "Orthodox",
-    "win": "21",
+    "win": "22",
     "lose": "10",
     "draw": "0"
   },
@@ -2203,7 +2203,7 @@
     "weight": "185 lbs.",
     "reach": "77.0\"",
     "stance": "Southpaw",
-    "win": "33",
+    "win": "34",
     "lose": "14",
     "draw": "0"
   },
@@ -2420,7 +2420,7 @@
     "reach": "76.0\"",
     "stance": "Orthodox",
     "win": "11",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -2564,7 +2564,7 @@
     "reach": "76.0\"",
     "stance": "Orthodox",
     "win": "13",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -2876,7 +2876,7 @@
     "reach": "69.0\"",
     "stance": "Orthodox",
     "win": "26",
-    "lose": "12",
+    "lose": "13",
     "draw": "0"
   },
   {
@@ -3296,7 +3296,19 @@
     "reach": "70.0\"",
     "stance": "Orthodox",
     "win": "15",
-    "lose": "5",
+    "lose": "6",
+    "draw": "0"
+  },
+  {
+    "fname": "Muhammad",
+    "lname": "Mokaev",
+    "nname": "The Punisher",
+    "height": "5' 9\"",
+    "weight": "135 lbs.",
+    "reach": "--",
+    "stance": "",
+    "win": "6",
+    "lose": "0",
     "draw": "0"
   },
   {
@@ -3643,7 +3655,7 @@
     "weight": "135 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "10",
+    "win": "11",
     "lose": "5",
     "draw": "0"
   },
@@ -3667,7 +3679,7 @@
     "weight": "170 lbs.",
     "reach": "79.0\"",
     "stance": "Orthodox",
-    "win": "12",
+    "win": "13",
     "lose": "0",
     "draw": "0"
   },
@@ -3764,7 +3776,7 @@
     "reach": "70.0\"",
     "stance": "Orthodox",
     "win": "19",
-    "lose": "5",
+    "lose": "6",
     "draw": "2"
   },
   {
@@ -3823,7 +3835,7 @@
     "weight": "170 lbs.",
     "reach": "72.0\"",
     "stance": "Orthodox",
-    "win": "20",
+    "win": "21",
     "lose": "7",
     "draw": "0"
   },
@@ -4039,7 +4051,7 @@
     "weight": "170 lbs.",
     "reach": "72.0\"",
     "stance": "Orthodox",
-    "win": "19",
+    "win": "20",
     "lose": "3",
     "draw": "0"
   },
@@ -4112,7 +4124,7 @@
     "reach": "65.0\"",
     "stance": "Orthodox",
     "win": "19",
-    "lose": "6",
+    "lose": "7",
     "draw": "0"
   },
   {
@@ -4123,7 +4135,7 @@
     "weight": "185 lbs.",
     "reach": "78.0\"",
     "stance": "Southpaw",
-    "win": "21",
+    "win": "22",
     "lose": "4",
     "draw": "0"
   },
@@ -4360,7 +4372,7 @@
     "lname": "Murzakanov",
     "nname": "The Professional",
     "height": "5' 10\"",
-    "weight": "205 lbs.",
+    "weight": "225 lbs.",
     "reach": "71.0\"",
     "stance": "Southpaw",
     "win": "10",
