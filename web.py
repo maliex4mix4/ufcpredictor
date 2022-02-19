@@ -6,8 +6,9 @@ import pickle
 from PIL import Image
 import plotly.graph_objects as go
 import plotly.express as px
-
-
+import requests
+import ufcstats
+import json
 
 class StreamlitApp:
 
@@ -28,6 +29,35 @@ class StreamlitApp:
 		prediction = model.predict_proba(df.reshape(1, -1))
 		pred = model.predict(df.reshape(1, -1))
 		return prediction, pred
+
+	def get_fighters(self):
+		response = requests.get('https://api.sportsdata.io/v3/mma/scores/json/Fighters?key=e08253ab23af409e9c33b0d432561340')
+		df = pd.DataFrame(response.json())
+		df['name'] = df[['FirstName', 'LastName']].apply(lambda x: ''.join(" "+x), axis=1)
+		return df[['FighterId', 'name']]
+
+	def get_fighter(self, fighter):
+		fi1 = ufcstats.getStats(fighter)
+		fil1 = json.loads(fi1)
+		cols = ['reach','SLpM','Str_Acc','SApM','Str_Def','TD_Avg','TD_Acc','TD_Def','Sub_Avg']
+		df = pd.DataFrame(
+			[
+				[
+					float(fil1['Reach:'].split('"')[0]),
+					float(fil1['SLpM:']),
+					float(fil1['Str. Acc.:'].split('%')[0])/100,
+					float(fil1['SApM:']),
+					float(fil1['Str. Def:'].split('%')[0])/100,
+					float(fil1['TD Avg.:']),
+					float(fil1['TD Acc.:'].split('%')[0])/100,
+					float(fil1['TD Def.:'].split('%')[0])/100,
+					float(fil1['Sub. Avg.:'])
+				]
+			],
+			columns=cols
+		)
+
+		return df
 
 	def plot_pie_chart(self, probabilities, labels):
 		fig = go.Figure(
@@ -54,6 +84,8 @@ class StreamlitApp:
 			'<h1 class="header-style" style="text-align: center;"> UFC Predictor </h1>',
 			unsafe_allow_html=True
 		)
+		fit = self.get_fighters()
+		# st.write(fit)
 		col1, col2 = st.columns(2)
 		# original = Image.open(image)
 		fighter1_img = Image.open("static/fighter_left.png")
@@ -66,12 +98,12 @@ class StreamlitApp:
 
 		fighter1 = col1.selectbox(
 			'Select Your Favourite Fighter',
-			self.fighters2['name']
+			fit['name']
 		)
 
 		fighter2 = col2.selectbox(
 			'Select The Underdog Fighter',
-			self.fighters2['name']
+			fit['name']
 		)
 
 		## weight class
@@ -118,8 +150,11 @@ class StreamlitApp:
 					'<h1 class="header-style" style="text-align: center;"> Prediction Results </h1>',
 					unsafe_allow_html=True
 				)
-				data1 = self.fighters2[self.fighters2.name == fighter1]
-				data2 = self.fighters2[self.fighters2.name == fighter2]
+
+				data1 = self.get_fighter(fighter1)
+				data2 = self.get_fighter(fighter2)
+
+				# st.write(data1, data2)
 
 				columns = ['REACH_delta','SLPM_delta','SAPM_delta','STRA_delta','STRD_delta','TD_delta','TDA_delta','TDD_delta','SUBA_delta','Odds_delta']
 				best_cols = ['SLPM_delta', 'SAPM_delta', 'STRD_delta', 'TDD_delta', 'SUBA_delta', 'Odds_delta']
