@@ -12,3 +12,4 @@ soupsieve==2.3.1
 tenacity==8.0.1
 threadpoolctl==3.0.0
 ufcstats==0.0.3
+streamlit
