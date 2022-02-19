@@ -1,3 +1,5 @@
+beautifulsoup4==4.10.0
+google==3.0.0
 joblib==1.1.0
 numpy==1.21.4
 Pillow==8.4.0
@@ -6,6 +8,7 @@ scikit-learn==1.0.1
 scipy==1.7.3
 six==1.16.0
 sklearn==0.0
+soupsieve==2.3.1
 tenacity==8.0.1
 threadpoolctl==3.0.0
-streamlit
+ufcstats==0.0.3
