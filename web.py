@@ -177,6 +177,16 @@ class StreamlitApp:
 
 				# st.dataframe(df)
 
+				diction = {
+					'SLPM_delta': 'Significant Strikes Landed per Minute',
+					'SAPM_delta': 'Significant Strikes Absorbed per Minute',
+					'STRD_delta': 'Significant Strike Defence',
+					'TDD_delta': 'Takedown Defense',
+					'SUBA_delta': 'Average Submissions Attempted per 15 minutes',
+				}
+
+				datas = df.head(1)[diction.keys()]
+
 				pred, d_pred = self.predict(np.array(df[best_cols]))
 
 				# st.write(pred)
@@ -185,6 +195,18 @@ class StreamlitApp:
 				pred_winner = "Underdog" if d_pred[0] == 0 else "Favourite"
 
 				title_match = 0 if fighter_t == False else 1
+
+				if pred_winner == "Underdog":
+					fet = list(datas[datas < 0].columns)
+				else:
+					fet = list(datas[datas < 1].columns)
+
+				features = []
+
+				for x in fet:
+					# st.write(diction[x])
+					features.append(diction[x])
+				
 
 				# st.write(pred_winner)
 				weight_classes = ['weight_class_Bantamweight','weight_class_Catch Weight', 'weight_class_Featherweight','weight_class_Flyweight', 'weight_class_Heavyweight','weight_class_Light Heavyweight', 'weight_class_Lightweight','weight_class_Middleweight', 'weight_class_Open Weight','weight_class_Super Heavyweight', 'weight_class_Welterweight',"weight_class_Women's Bantamweight","weight_class_Women's Featherweight", "weight_class_Women's Flyweight","weight_class_Women's Strawweight"]
@@ -278,7 +300,7 @@ class StreamlitApp:
 				)
 
 				st.markdown(
-					f'<p style="text-align: center; color: green;">The <strong>{pred_winner}</strong> will most likely win by <strong>{map_method[pred2[0]]}</strong> in round <strong>{pred3[0]}</strong>.<br/> <b>Note</b> that this result is just based on speculation and you shouldn"t bet your money based on this alone.</p>',
+					f'<p style="text-align: center; color: green;">The <strong>{pred_winner}</strong> will most likely win by <strong>{map_method[pred2[0]]}</strong> in round <strong>{pred3[0]}</strong>. <br/> <b>Note</b> that this result is just based on speculation and you shouldn"t bet your money based on this alone.</p><br/> The result was determined in favour of <b>{pred_winner}<b/> by <b>{", ".join(features)}</b>.',
 					unsafe_allow_html=True
 				)
 
