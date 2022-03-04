@@ -300,7 +300,12 @@ class StreamlitApp:
 				)
 
 				st.markdown(
-					f'<p style="text-align: center; color: green;">The <strong>{pred_winner}</strong> will most likely win by <strong>{map_method[pred2[0]]}</strong> in round <strong>{pred3[0]}</strong>. <br/> <b>Note</b> that this result is just based on speculation and you shouldn"t bet your money based on this alone.</p><br/> The result was determined in favour of <b>{pred_winner}<b/> by <b>{", ".join(features)}</b>.',
+					f'<p style="text-align: center; color: green;">The <strong>{pred_winner}</strong> will most likely win by <strong>{map_method[pred2[0]]}</strong> in round <strong>{pred3[0]}</strong>. <br/> <b>Note</b> that this result is just based on speculation and you shouldn"t bet your money based on this alone.</p>',
+					unsafe_allow_html=True
+				)
+
+				st.markdown(
+					f'<p style="text-align: center; color: green;">The result was determined in favour of <b>{pred_winner}<b/> by <b>{", ".join(features)}</b>.',
 					unsafe_allow_html=True
 				)
 
