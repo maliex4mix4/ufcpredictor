@@ -178,6 +178,7 @@ class StreamlitApp:
 				# st.dataframe(df)
 
 				diction = {
+					'STRA_delta': 'Significant Striking Accuracy',
 					'SLPM_delta': 'Significant Strikes Landed per Minute',
 					'SAPM_delta': 'Significant Strikes Absorbed per Minute',
 					'STRD_delta': 'Significant Strike Defence',
@@ -197,11 +198,18 @@ class StreamlitApp:
 				title_match = 0 if fighter_t == False else 1
 
 				if pred_winner == "Underdog":
-					fet = list(datas[datas < 0].columns)
+					# fet = df[df < 0].idxmin(axis=1)[0]
+					fet = df[df < 0].T[0].nsmallest(2).index.tolist()
+					# digi = df.drop(fet, axis=0)[df.drop(fet) < 0].idxmax(axis=1)[0]
 				else:
-					fet = list(datas[datas < 1].columns)
+					fet = df[df > 0].T[0].nsmallest(2).index.tolist()
+					# digi = df.drop(fet, axis=0)[df.drop(fet) < 1].idxmax(axis=1)[0]
 
 				features = []
+
+				# fet_comb = list([fet])
+
+				# st.write(fet)
 
 				for x in fet:
 					# st.write(diction[x])
