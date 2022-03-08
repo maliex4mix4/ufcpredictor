@@ -178,6 +178,7 @@ class StreamlitApp:
 				# st.dataframe(df)
 
 				diction = {
+					'TD_delta': 'Takedown'
 					'STRA_delta': 'Significant Striking Accuracy',
 					'SLPM_delta': 'Significant Strikes Landed per Minute',
 					'SAPM_delta': 'Significant Strikes Absorbed per Minute',
