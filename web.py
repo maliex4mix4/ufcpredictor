@@ -186,6 +186,8 @@ class StreamlitApp:
 					'STRD_delta': 'Significant Strike Defence',
 					'TDD_delta': 'Takedown Defense',
 					'SUBA_delta': 'Average Submissions Attempted per 15 minutes',
+					'Odds_delta': 'Betting Odds',
+					'TDA_delta': 'TDA_delta',
 				}
 
 				datas = df.head(1)[diction.keys()]
