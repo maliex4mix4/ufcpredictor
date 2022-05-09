@@ -356,7 +356,7 @@
     "reach": "74.0\"",
     "stance": "Orthodox",
     "win": "17",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -367,7 +367,7 @@
     "weight": "125 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "10",
+    "win": "11",
     "lose": "1",
     "draw": "0"
   },
@@ -393,6 +393,18 @@
     "stance": "Orthodox",
     "win": "8",
     "lose": "1",
+    "draw": "0"
+  },
+  {
+    "fname": "Andre",
+    "lname": "Fialho",
+    "nname": null,
+    "height": "6' 0\"",
+    "weight": "170 lbs.",
+    "reach": "74.0\"",
+    "stance": "Orthodox",
+    "win": "14",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -439,7 +451,7 @@
     "weight": "125 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
-    "win": "20",
+    "win": "21",
     "lose": "2",
     "draw": "1"
   },
@@ -655,7 +667,7 @@
     "weight": "155 lbs.",
     "reach": "71.0\"",
     "stance": "Switch",
-    "win": "10",
+    "win": "11",
     "lose": "1",
     "draw": "0"
   },
@@ -824,7 +836,7 @@
     "reach": "71.0\"",
     "stance": "Orthodox",
     "win": "19",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1207,7 +1219,7 @@
     "weight": "155 lbs.",
     "reach": "71.0\"",
     "stance": "Orthodox",
-    "win": "8",
+    "win": "9",
     "lose": "3",
     "draw": "1"
   },

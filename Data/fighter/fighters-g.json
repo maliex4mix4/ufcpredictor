@@ -55,7 +55,7 @@
     "weight": "155 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "22",
+    "win": "23",
     "lose": "3",
     "draw": "0"
   },
@@ -152,7 +152,7 @@
     "reach": "74.0\"",
     "stance": "Switch",
     "win": "7",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -271,7 +271,7 @@
     "weight": "155 lbs.",
     "reach": "70.0\"",
     "stance": "Southpaw",
-    "win": "19",
+    "win": "20",
     "lose": "1",
     "draw": "0"
   },
@@ -308,7 +308,7 @@
     "reach": "81.0\"",
     "stance": "Orthodox",
     "win": "10",
-    "lose": "0",
+    "lose": "1",
     "draw": "0"
   },
   {
@@ -340,11 +340,11 @@
     "lname": "Garbrandt",
     "nname": "No Love",
     "height": "5' 8\"",
-    "weight": "135 lbs.",
+    "weight": "125 lbs.",
     "reach": "65.0\"",
     "stance": "Orthodox",
     "win": "12",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -439,7 +439,7 @@
     "weight": "155 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "12",
+    "win": "13",
     "lose": "2",
     "draw": "0"
   },
@@ -485,9 +485,9 @@
     "nname": "The Future",
     "height": "6' 3\"",
     "weight": "170 lbs.",
-    "reach": "--",
+    "reach": "74.0\"",
     "stance": "Orthodox",
-    "win": "7",
+    "win": "8",
     "lose": "0",
     "draw": "0"
   },
@@ -559,7 +559,7 @@
     "weight": "125 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "7",
+    "win": "8",
     "lose": "0",
     "draw": "2"
   },
@@ -836,7 +836,7 @@
     "reach": "74.0\"",
     "stance": "Orthodox",
     "win": "14",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -1060,10 +1060,10 @@
     "lname": "Godinez",
     "nname": null,
     "height": "5' 2\"",
-    "weight": "125 lbs.",
+    "weight": "115 lbs.",
     "reach": "61.0\"",
     "stance": "Orthodox",
-    "win": "6",
+    "win": "7",
     "lose": "2",
     "draw": "0"
   },
@@ -1244,7 +1244,7 @@
     "reach": "65.0\"",
     "stance": "Orthodox",
     "win": "10",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -1404,6 +1404,18 @@
     "draw": "0"
   },
   {
+    "fname": "Jennifer",
+    "lname": "Gonzalez",
+    "nname": "Jefa",
+    "height": "5' 2\"",
+    "weight": "125 lbs.",
+    "reach": "--",
+    "stance": "",
+    "win": "13",
+    "lose": "5",
+    "draw": "0"
+  },
+  {
     "fname": "Kier",
     "lname": "Gooch",
     "nname": null,
@@ -1530,8 +1542,8 @@
     "height": "6' 0\"",
     "weight": "185 lbs.",
     "reach": "--",
-    "stance": "",
-    "win": "3",
+    "stance": "Switch",
+    "win": "4",
     "lose": "0",
     "draw": "0"
   },
@@ -1904,7 +1916,7 @@
     "reach": "69.0\"",
     "stance": "Orthodox",
     "win": "13",
-    "lose": "5",
+    "lose": "6",
     "draw": "0"
   },
   {
@@ -1939,7 +1951,7 @@
     "weight": "135 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "21",
+    "win": "22",
     "lose": "7",
     "draw": "0"
   },
@@ -2011,7 +2023,7 @@
     "weight": "155 lbs.",
     "reach": "71.0\"",
     "stance": "Orthodox",
-    "win": "27",
+    "win": "28",
     "lose": "12",
     "draw": "1"
   },
@@ -2152,7 +2164,7 @@
     "lname": "Grishin",
     "nname": "Maximus",
     "height": "6' 3\"",
-    "weight": "220 lbs.",
+    "weight": "205 lbs.",
     "reach": "78.0\"",
     "stance": "Orthodox",
     "win": "31",
@@ -2216,7 +2228,7 @@
     "reach": "68.0\"",
     "stance": "Orthodox",
     "win": "15",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -2299,7 +2311,7 @@
     "weight": "155 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "36",
+    "win": "37",
     "lose": "18",
     "draw": "0"
   },

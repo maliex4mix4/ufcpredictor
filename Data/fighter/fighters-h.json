@@ -139,7 +139,7 @@
     "weight": "145 lbs.",
     "reach": "70.0\"",
     "stance": "Southpaw",
-    "win": "8",
+    "win": "9",
     "lose": "2",
     "draw": "0"
   },
@@ -344,7 +344,7 @@
     "reach": "63.0\"",
     "stance": "Orthodox",
     "win": "7",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -668,7 +668,7 @@
     "reach": "77.0\"",
     "stance": "Orthodox",
     "win": "11",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -1041,6 +1041,18 @@
     "stance": "Orthodox",
     "win": "12",
     "lose": "4",
+    "draw": "0"
+  },
+  {
+    "fname": "Victor",
+    "lname": "Henry",
+    "nname": "La Mangosta",
+    "height": "5' 7\"",
+    "weight": "135 lbs.",
+    "reach": "68.0\"",
+    "stance": "Switch",
+    "win": "22",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1436,7 +1448,7 @@
     "reach": "64.0\"",
     "stance": "Orthodox",
     "win": "13",
-    "lose": "10",
+    "lose": "11",
     "draw": "0"
   },
   {
@@ -1459,7 +1471,7 @@
     "weight": "205 lbs.",
     "reach": "79.0\"",
     "stance": "Southpaw",
-    "win": "8",
+    "win": "9",
     "lose": "1",
     "draw": "0"
   },
@@ -1663,7 +1675,7 @@
     "weight": "145 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "22",
+    "win": "23",
     "lose": "6",
     "draw": "0"
   },
@@ -1718,13 +1730,13 @@
   {
     "fname": "Joseph",
     "lname": "Holmes",
-    "nname": "Uglyman",
+    "nname": "Uglyman Joe",
     "height": "6' 4\"",
     "weight": "185 lbs.",
     "reach": "80.0\"",
     "stance": "Orthodox",
-    "win": "6",
-    "lose": "1",
+    "win": "7",
+    "lose": "2",
     "draw": "0"
   },
   {
@@ -1876,7 +1888,7 @@
     "lname": "Hooker",
     "nname": "The Hangman",
     "height": "6' 0\"",
-    "weight": "155 lbs.",
+    "weight": "145 lbs.",
     "reach": "75.0\"",
     "stance": "Switch",
     "win": "21",
@@ -2252,7 +2264,7 @@
     "reach": "64.0\"",
     "stance": "Orthodox",
     "win": "5",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -2300,7 +2312,7 @@
     "reach": "75.0\"",
     "stance": "Orthodox",
     "win": "7",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {

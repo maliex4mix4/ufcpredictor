@@ -115,7 +115,7 @@
     "weight": "170 lbs.",
     "reach": "76.0\"",
     "stance": "Orthodox",
-    "win": "7",
+    "win": "8",
     "lose": "0",
     "draw": "0"
   },
@@ -607,7 +607,7 @@
     "weight": "155 lbs.",
     "reach": "71.0\"",
     "stance": "Southpaw",
-    "win": "8",
+    "win": "9",
     "lose": "1",
     "draw": "0"
   },
@@ -811,7 +811,7 @@
     "weight": "125 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "12",
+    "win": "13",
     "lose": "5",
     "draw": "0"
   },
@@ -895,7 +895,7 @@
     "weight": "115 lbs.",
     "reach": "65.0\"",
     "stance": "Southpaw",
-    "win": "10",
+    "win": "11",
     "lose": "1",
     "draw": "1"
   },
@@ -1088,7 +1088,7 @@
     "reach": "71.0\"",
     "stance": "",
     "win": "5",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -1148,7 +1148,7 @@
     "reach": "71.0\"",
     "stance": "Southpaw",
     "win": "6",
-    "lose": "0",
+    "lose": "1",
     "draw": "0"
   },
   {
@@ -1171,7 +1171,7 @@
     "weight": "260 lbs.",
     "reach": "79.0\"",
     "stance": "Orthodox",
-    "win": "25",
+    "win": "26",
     "lose": "8",
     "draw": "0"
   },
@@ -1652,7 +1652,7 @@
     "reach": "61.0\"",
     "stance": "Orthodox",
     "win": "6",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -2020,11 +2020,11 @@
     "lname": "Lutz",
     "nname": "Top Gun",
     "height": "5' 8\"",
-    "weight": "155 lbs.",
+    "weight": "145 lbs.",
     "reach": "72.0\"",
     "stance": "Orthodox",
     "win": "12",
-    "lose": "1",
+    "lose": "2",
     "draw": "0"
   },
   {

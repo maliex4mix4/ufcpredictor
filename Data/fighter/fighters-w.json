@@ -596,7 +596,7 @@
     "reach": "72.0\"",
     "stance": "Orthodox",
     "win": "5",
-    "lose": "0",
+    "lose": "1",
     "draw": "0"
   },
   {
@@ -1064,7 +1064,7 @@
     "reach": "75.0\"",
     "stance": "Southpaw",
     "win": "9",
-    "lose": "5",
+    "lose": "6",
     "draw": "0"
   },
   {
@@ -1087,7 +1087,7 @@
     "weight": "170 lbs.",
     "reach": "77.0\"",
     "stance": "Orthodox",
-    "win": "12",
+    "win": "13",
     "lose": "2",
     "draw": "0"
   },
@@ -1308,11 +1308,23 @@
     "draw": "0"
   },
   {
+    "fname": "Joanne",
+    "lname": "Wood",
+    "nname": "JoJo",
+    "height": "5' 6\"",
+    "weight": "125 lbs.",
+    "reach": "65.0\"",
+    "stance": "Orthodox",
+    "win": "15",
+    "lose": "7",
+    "draw": "0"
+  },
+  {
     "fname": "Nathaniel",
     "lname": "Wood",
     "nname": "The Prospect",
     "height": "5' 6\"",
-    "weight": "140 lbs.",
+    "weight": "135 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
     "win": "17",
@@ -1351,7 +1363,7 @@
     "weight": "145 lbs.",
     "reach": "78.0\"",
     "stance": "Orthodox",
-    "win": "8",
+    "win": "9",
     "lose": "1",
     "draw": "0"
   },
@@ -1448,7 +1460,7 @@
     "reach": "77.0\"",
     "stance": "Orthodox",
     "win": "12",
-    "lose": "1",
+    "lose": "2",
     "draw": "0"
   },
   {

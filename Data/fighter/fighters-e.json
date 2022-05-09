@@ -116,7 +116,7 @@
     "reach": "68.0\"",
     "stance": "Orthodox",
     "win": "23",
-    "lose": "9",
+    "lose": "10",
     "draw": "1"
   },
   {
@@ -320,7 +320,7 @@
     "reach": "71.0\"",
     "stance": "Orthodox",
     "win": "27",
-    "lose": "9",
+    "lose": "10",
     "draw": "0"
   },
   {
@@ -499,7 +499,7 @@
     "weight": "145 lbs.",
     "reach": "70.0\"",
     "stance": "Orthodox",
-    "win": "16",
+    "win": "17",
     "lose": "2",
     "draw": "0"
   },
@@ -812,7 +812,7 @@
     "reach": "68.0\"",
     "stance": "Orthodox",
     "win": "7",
-    "lose": "0",
+    "lose": "1",
     "draw": "0"
   },
   {
@@ -856,11 +856,11 @@
     "lname": "Eubanks",
     "nname": "SarJ",
     "height": "5' 4\"",
-    "weight": "135 lbs.",
+    "weight": "125 lbs.",
     "reach": "67.0\"",
     "stance": "Orthodox",
     "win": "8",
-    "lose": "6",
+    "lose": "7",
     "draw": "0"
   },
   {
@@ -952,11 +952,11 @@
     "lname": "Ewell",
     "nname": "Mr. Highlight",
     "height": "5' 8\"",
-    "weight": "135 lbs.",
+    "weight": "145 lbs.",
     "reach": "75.0\"",
     "stance": "Southpaw",
     "win": "17",
-    "lose": "8",
+    "lose": "9",
     "draw": "0"
   },
   {

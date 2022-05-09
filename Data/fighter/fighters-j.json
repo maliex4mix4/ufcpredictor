@@ -139,7 +139,7 @@
     "weight": "205 lbs.",
     "reach": "76.0\"",
     "stance": "Orthodox",
-    "win": "15",
+    "win": "16",
     "lose": "5",
     "draw": "1"
   },
@@ -295,7 +295,7 @@
     "weight": "125 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
-    "win": "6",
+    "win": "7",
     "lose": "1",
     "draw": "0"
   },
@@ -800,7 +800,7 @@
     "reach": "62.0\"",
     "stance": "Orthodox",
     "win": "8",
-    "lose": "4",
+    "lose": "5",
     "draw": "0"
   },
   {
@@ -1159,7 +1159,7 @@
     "weight": "145 lbs.",
     "reach": "69.0\"",
     "stance": "Switch",
-    "win": "11",
+    "win": "12",
     "lose": "4",
     "draw": "1"
   },
@@ -1279,7 +1279,7 @@
     "weight": "205 lbs.",
     "reach": "78.0\"",
     "stance": "Orthodox",
-    "win": "14",
+    "win": "15",
     "lose": "2",
     "draw": "1"
   },

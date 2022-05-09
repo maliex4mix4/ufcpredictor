@@ -67,7 +67,7 @@
     "weight": "135 lbs.",
     "reach": "72.0\"",
     "stance": "Switch",
-    "win": "14",
+    "win": "15",
     "lose": "1",
     "draw": "0"
   },
@@ -331,7 +331,7 @@
     "weight": "155 lbs.",
     "reach": "74.0\"",
     "stance": "Orthodox",
-    "win": "31",
+    "win": "32",
     "lose": "8",
     "draw": "0"
   },
@@ -404,7 +404,7 @@
     "reach": "72.0\"",
     "stance": "Orthodox",
     "win": "18",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -655,7 +655,7 @@
     "weight": "125 lbs.",
     "reach": "73.0\"",
     "stance": "Southpaw",
-    "win": "9",
+    "win": "10",
     "lose": "4",
     "draw": "0"
   },

@@ -56,7 +56,7 @@
     "reach": "74.0\"",
     "stance": "Orthodox",
     "win": "10",
-    "lose": "1",
+    "lose": "2",
     "draw": "0"
   },
   {
@@ -91,7 +91,7 @@
     "weight": "145 lbs.",
     "reach": "70.0\"",
     "stance": "Southpaw",
-    "win": "6",
+    "win": "7",
     "lose": "1",
     "draw": "0"
   },
@@ -307,7 +307,7 @@
     "weight": "170 lbs.",
     "reach": "72.0\"",
     "stance": "Southpaw",
-    "win": "15",
+    "win": "16",
     "lose": "8",
     "draw": "0"
   },
@@ -332,7 +332,7 @@
     "reach": "67.0\"",
     "stance": "Orthodox",
     "win": "16",
-    "lose": "2",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -415,7 +415,7 @@
     "weight": "265 lbs.",
     "reach": "75.0\"",
     "stance": "Orthodox",
-    "win": "21",
+    "win": "22",
     "lose": "7",
     "draw": "0"
   },
@@ -1315,7 +1315,7 @@
     "weight": "145 lbs.",
     "reach": "75.0\"",
     "stance": "Switch",
-    "win": "8",
+    "win": "9",
     "lose": "1",
     "draw": "1"
   },
@@ -1492,10 +1492,10 @@
     "lname": "Blanchfield",
     "nname": "Cold Blooded",
     "height": "5' 4\"",
-    "weight": "135 lbs.",
+    "weight": "125 lbs.",
     "reach": "66.0\"",
     "stance": "Orthodox",
-    "win": "7",
+    "win": "8",
     "lose": "1",
     "draw": "0"
   },
@@ -1747,8 +1747,8 @@
     "weight": "125 lbs.",
     "reach": "--",
     "stance": "Orthodox",
-    "win": "12",
-    "lose": "1",
+    "win": "16",
+    "lose": "3",
     "draw": "0"
   },
   {
@@ -1819,8 +1819,8 @@
     "weight": "125 lbs.",
     "reach": "67.0\"",
     "stance": "Orthodox",
-    "win": "17",
-    "lose": "3",
+    "win": "16",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -1879,7 +1879,7 @@
     "weight": "155 lbs.",
     "reach": "69.0\"",
     "stance": "Orthodox",
-    "win": "5",
+    "win": "6",
     "lose": "1",
     "draw": "0"
   },
@@ -2143,7 +2143,7 @@
     "weight": "170 lbs.",
     "reach": "72.0\"",
     "stance": "Orthodox",
-    "win": "14",
+    "win": "15",
     "lose": "0",
     "draw": "0"
   },
@@ -2168,7 +2168,7 @@
     "reach": "72.0\"",
     "stance": "Orthodox",
     "win": "9",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -2384,7 +2384,7 @@
     "reach": "72.0\"",
     "stance": "Orthodox",
     "win": "12",
-    "lose": "2",
+    "lose": "3",
     "draw": "1"
   },
   {
@@ -2599,7 +2599,7 @@
     "weight": "145 lbs.",
     "reach": "72.0\"",
     "stance": "Switch",
-    "win": "15",
+    "win": "16",
     "lose": "8",
     "draw": "0"
   },
@@ -2935,7 +2935,7 @@
     "weight": "145 lbs.",
     "reach": "75.0\"",
     "stance": "Orthodox",
-    "win": "13",
+    "win": "14",
     "lose": "3",
     "draw": "0"
   },
@@ -2960,7 +2960,7 @@
     "reach": "74.0\"",
     "stance": "Switch",
     "win": "6",
-    "lose": "0",
+    "lose": "1",
     "draw": "0"
   },
   {
@@ -3104,7 +3104,7 @@
     "reach": "73.0\"",
     "stance": "Orthodox",
     "win": "8",
-    "lose": "3",
+    "lose": "4",
     "draw": "0"
   },
   {
@@ -3213,18 +3213,6 @@
     "stance": "Orthodox",
     "win": "9",
     "lose": "4",
-    "draw": "0"
-  },
-  {
-    "fname": "Cheyanne",
-    "lname": "Buys",
-    "nname": null,
-    "height": "5' 3\"",
-    "weight": "115 lbs.",
-    "reach": "63.0\"",
-    "stance": "Switch",
-    "win": "6",
-    "lose": "2",
     "draw": "0"
   },
   {

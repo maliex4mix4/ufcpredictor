@@ -32,7 +32,7 @@
     "reach": "72.0\"",
     "stance": "Orthodox",
     "win": "10",
-    "lose": "0",
+    "lose": "1",
     "draw": "0"
   },
   {
@@ -194,9 +194,9 @@
   {
     "fname": "Jared",
     "lname": "Vanderaa",
-    "nname": "The Mountain",
+    "nname": null,
     "height": "6' 4\"",
-    "weight": "260 lbs.",
+    "weight": "265 lbs.",
     "reach": "80.0\"",
     "stance": "Orthodox",
     "win": "12",
@@ -499,7 +499,7 @@
     "weight": "135 lbs.",
     "reach": "70.0\"",
     "stance": "Switch",
-    "win": "17",
+    "win": "18",
     "lose": "7",
     "draw": "1"
   },
@@ -548,7 +548,7 @@
     "reach": "68.0\"",
     "stance": "Orthodox",
     "win": "9",
-    "lose": "2",
+    "lose": "3",
     "draw": "1"
   },
   {
@@ -679,7 +679,7 @@
     "weight": "135 lbs.",
     "reach": "68.0\"",
     "stance": "Orthodox",
-    "win": "11",
+    "win": "12",
     "lose": "2",
     "draw": "0"
   },
@@ -740,7 +740,7 @@
     "reach": "76.0\"",
     "stance": "Orthodox",
     "win": "17",
-    "lose": "13",
+    "lose": "14",
     "draw": "0"
   },
   {
@@ -861,6 +861,18 @@
     "stance": "Orthodox",
     "win": "30",
     "lose": "11",
+    "draw": "0"
+  },
+  {
+    "fname": "Cheyanne",
+    "lname": "Vlismas",
+    "nname": "The Warrior Princess",
+    "height": "5' 3\"",
+    "weight": "115 lbs.",
+    "reach": "63.0\"",
+    "stance": "Switch",
+    "win": "7",
+    "lose": "2",
     "draw": "0"
   },
   {
