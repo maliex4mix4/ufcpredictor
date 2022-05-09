@@ -1404,6 +1404,18 @@
     "draw": "0"
   },
   {
+    "fname": "Jennifer",
+    "lname": "Gonzalez",
+    "nname": "Jefa",
+    "height": "5' 2\"",
+    "weight": "125 lbs.",
+    "reach": "--",
+    "stance": "",
+    "win": "13",
+    "lose": "5",
+    "draw": "0"
+  },
+  {
     "fname": "Kier",
     "lname": "Gooch",
     "nname": null,
@@ -1530,8 +1542,8 @@
     "height": "6' 0\"",
     "weight": "185 lbs.",
     "reach": "--",
-    "stance": "",
-    "win": "3",
+    "stance": "Switch",
+    "win": "4",
     "lose": "0",
     "draw": "0"
   },
@@ -2152,7 +2164,7 @@
     "lname": "Grishin",
     "nname": "Maximus",
     "height": "6' 3\"",
-    "weight": "220 lbs.",
+    "weight": "205 lbs.",
     "reach": "78.0\"",
     "stance": "Orthodox",
     "win": "31",

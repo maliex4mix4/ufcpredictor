@@ -1,6 +1,7 @@
 #!/usr/bin/python -tt
 import numpy as np
 import pandas as pd
+from streamlit.server.Server import Server
 import streamlit as st
 import pickle
 from PIL import Image
@@ -10,6 +11,7 @@ from threading import Thread, current_thread
 from time import sleep
 from subprocess import call, DEVNULL
 from sources import data_preparations
+import sys
 
 
 class StreamlitApp:
@@ -19,12 +21,18 @@ class StreamlitApp:
 		self.fighters2 = pd.read_csv('Data/fighters.csv')
 		self.df2 = pd.read_csv('Data/prediction_data.csv', index_col="Unnamed: 0")
 
-	def load_models(self):
+		# Switch to this for faster loading.
 		mlp_file = open('Models/predict_winner.pkl', 'rb')
-		mlp_model = pickle.load(mlp_file)
+		self.mlp_model = pickle.load(mlp_file)
 		mlp_file.close()
 
-		return mlp_model
+	def reconstruct(self):
+		self.fighters = pd.read_csv('Data/UFC_Fighters_Database.csv')
+		self.fighters2 = pd.read_csv('Data/fighters.csv')
+		self.df2 = pd.read_csv('Data/prediction_data.csv', index_col="Unnamed: 0")
+
+	def load_models(self):
+		return self.mlp_model
 
 	def predict(self, df):
 		model = self.load_models()
@@ -47,6 +55,23 @@ class StreamlitApp:
 		)
 		return fig
 
+	def get_headers():
+	    # Hack to get the session object from Streamlit.
+
+	    current_server = Server.get_current()
+	    if hasattr(current_server, '_session_infos'):
+	        # Streamlit < 0.56
+	        session_infos = Server.get_current()._session_infos.values()
+	    else:
+	        session_infos = Server.get_current()._session_info_by_id.values()
+
+	    # Multiple Session Objects?
+	    for session_info in session_infos:
+	        headers = session_info.ws.request.headers
+	        st.write(headers)
+		
+		return headers
+
 	def construct_app(self):
 		st.set_page_config(
 	        page_title="Predictor",
@@ -59,11 +84,12 @@ class StreamlitApp:
 		)
 		col1, col2 = st.columns(2)
 		# original = Image.open(image)
-		fighter1_img = Image.open("static/fighter_left.png")
-		fighter2_img = Image.open("static/fighter_right.png")
 
-		col1.image(fighter1_img, caption="Favourite")
-		col2.image(fighter2_img, caption="Underdog")
+		# fighter1_img = Image.open("static/fighter_left.png")
+		# fighter2_img = Image.open("static/fighter_right.png")
+
+		# col1.image(fighter1_img, caption="Favourite")
+		# col2.image(fighter2_img, caption="Underdog")
 
 		# Add all Important Fields
 
@@ -254,6 +280,7 @@ class StreamlitApp:
 
 
 def data_refresher_function(arg):
+	global sa
 	t = current_thread()
 	# Thread is alive by default
 	t.alive = True
@@ -270,6 +297,9 @@ def data_refresher_function(arg):
 		call("python sources/data_preparations.py", stdout=DEVNULL, stderr=DEVNULL)
 		print("COMPLETED\n..............................................................")
 
+		print("UPDATING STREAMLIT APP\n.................................................")
+		sa.reconstruct()
+		sa.construct_app()
 		# Wait for 12hours
 		sleep(43200)
 
@@ -278,7 +308,7 @@ data_refresher = Thread(target = data_refresher_function, args = (10, ))
 data_refresher.daemon = True
 
 try:
-	data_refresher.start()
+	# data_refresher.start()
 
 	sa = StreamlitApp()
 	sa.construct_app()
@@ -286,4 +316,4 @@ try:
 	# data_refresher.join()
 except Exception as e:
 	data_refresher.alive = False
-	sys.exit(e)
+	# sys.exit(e)
