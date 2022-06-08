@@ -1,7 +1,7 @@
 #!/usr/bin/python -tt
 import numpy as np
 import pandas as pd
-from streamlit.server.Server import Server
+from streamlit.server.server import Server
 import streamlit as st
 import pickle
 from PIL import Image
@@ -56,20 +56,20 @@ class StreamlitApp:
 		return fig
 
 	def get_headers():
-	    # Hack to get the session object from Streamlit.
+		# Hack to get the session object from Streamlit.
 
-	    current_server = Server.get_current()
-	    if hasattr(current_server, '_session_infos'):
-	        # Streamlit < 0.56
-	        session_infos = Server.get_current()._session_infos.values()
-	    else:
-	        session_infos = Server.get_current()._session_info_by_id.values()
+		current_server = Server.get_current()
+		if hasattr(current_server, '_session_infos'):
+			# Streamlit < 0.56
+			session_infos = Server.get_current()._session_infos.values()
+		else:
+			session_infos = Server.get_current()._session_info_by_id.values()
 
-	    # Multiple Session Objects?
-	    for session_info in session_infos:
-	        headers = session_info.ws.request.headers
-	        st.write(headers)
-		
+		# Multiple Session Objects?
+		for session_info in session_infos:
+			headers = session_info.ws.request.headers
+			st.write(headers)
+
 		return headers
 
 	def construct_app(self):

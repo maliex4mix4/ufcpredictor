@@ -367,7 +367,7 @@ combined.to_csv("Data/prediction_data.csv")
 
 
 fi.to_csv("Data/fighters_scraped.csv")
-fighters_clean.to_csv("Data/fighters.csv")
+# fighters_clean.to_csv("Data/fighters.csv")
 
 
 # In[ ]:
