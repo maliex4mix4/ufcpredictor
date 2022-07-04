@@ -290,19 +290,18 @@ def data_refresher_function(arg):
 			break
 		
 		print("UPDATING FIGHTERS\n..............................................................")
-		call("python ufcscraper.py", stdout=DEVNULL, stderr=DEVNULL)
+		call(["python", "ufcscraper.py"], stdout=DEVNULL, stderr=DEVNULL)
 		print("COMPLETED\n..............................................................")
 
 		print("PREPARING DATA\n..............................................................")
-		call("python sources/data_preparations.py", stdout=DEVNULL, stderr=DEVNULL)
+		call(["python", "sources/data_preparations.py"], stdout=DEVNULL, stderr=DEVNULL)
 		print("COMPLETED\n..............................................................")
 
 		print("UPDATING STREAMLIT APP\n.................................................")
-		sa.reconstruct()
-		sa.construct_app()
+		# sa.reconstruct()
+		# sa.construct_app()
 		# Wait for 12hours
-		sleep(43200)
-
+		# sleep(43200)
 
 data_refresher = Thread(target = data_refresher_function, args = (10, ))
 data_refresher.daemon = True
@@ -317,3 +316,4 @@ try:
 except Exception as e:
 	data_refresher.alive = False
 	# sys.exit(e)
+	print(e)
