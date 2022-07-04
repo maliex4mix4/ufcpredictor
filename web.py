@@ -150,6 +150,8 @@ class StreamlitApp:
 				data1 = self.fighters2[self.fighters2.name == fighter1]
 				data2 = self.fighters2[self.fighters2.name == fighter2]
 
+				st.table(data1)
+
 				columns = ['REACH_delta','SLPM_delta','SAPM_delta','STRA_delta','STRD_delta','TD_delta','TDA_delta','TDD_delta','SUBA_delta','Odds_delta']
 				best_cols = ['SLPM_delta', 'SAPM_delta', 'STRD_delta', 'TDD_delta', 'SUBA_delta', 'Odds_delta']
 
