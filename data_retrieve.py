@@ -11,6 +11,8 @@ class UfcscraperSpider(scrapy.Spider):
 		'http://ufcstats.com/statistics/fighters?char=a&page=all'
 	]
 
+	fighters = []
+
 	def parse(self, response):
 		results = []
 		for user_info in response.css(".b-statistics__table-row")[2::]:
@@ -29,30 +31,13 @@ class UfcscraperSpider(scrapy.Spider):
 
 		for url in results:
 			yield Request(url=url, callback=self.parse_individual, dont_filter=True)
+		
+		with open('Data/ufc_fighters.json', 'w+') as f:
+			f.write(json.dumps(self.fighters))
+			f.close()
 
 	def parse_individual(self, response, **kwargs):
 		res = {}
-		# keys = response.css('ul li.b-list__box-list-item_type_block i ::text').getall()
-		# values = response.css('ul li.b-list__box-list-item_type_block ::text').getall()
-
-		# def cleaned_key_vals(key, vals):
-		# 	k = [k.strip() for k in key]
-		# 	v = [v.strip() for v in vals]
-		# 	vl = [v_ for v_ in v if v_ not in k ]
-
-		# 	return k, vl
-
-		# keys, values = cleaned_key_vals(keys, values)
-
-		# for x in keys:
-		# 	if len(x) < 1:
-		# 		pass
-		# 	else:
-		# 		try:
-		# 			res[x] = values[keys.index(x)]
-		# 		except:
-		# 			res[x] = None
-
 		res["name"] = response.css('span.b-content__title-highlight ::text').get().strip()
 		res["nname"] = response.css('p.b-content__Nickname ::text').get().strip()
 		res['win'] = int(response.css('span.b-content__title-record ::text').get().strip().split(':')[1].split('-')[0].strip())
@@ -80,12 +65,13 @@ class UfcscraperSpider(scrapy.Spider):
 				title = texts[0]
 				content = texts[1]
 				# print(title, content)
-				if title == "Reach" and content == '--':
-					res[title.lower().replace('.', '')] = 0
-				else:
-					res[title.lower().replace('.', '')] = int(content.strip().replace('.', '').replace('"', ''))
+				if title == "Reach":
+					if content == '--':
+						res[title.lower().replace('.', '')] = 0
+					else:
+						res[title.lower().replace('.', '')] = int(content.strip().replace('.', '').replace('"', ''))
 				if title in ["Height", "Weight", "STANCE", "DOB"]:
-					res[title.lower().replace('.', '')] = content.strip().replace('.', '').replace('\'', '')
+					res[title.lower().replace('.', '')] = content.strip().replace('.', '')
 				if '%' in content:
 					res[title.replace('.', '')] = float(content[:-1])/100
 				try:
@@ -93,12 +79,13 @@ class UfcscraperSpider(scrapy.Spider):
 						res[title.replace('.', '')] = float(content.strip())
 				except Exception:
 					pass
-				if title.replace('.', '') == 'Sub_Avg':
-					print("Subimtion average", float(content.strip()))
-						
+				if title.replace('.', '') == 'Sub_Avg' and float(content.strip()) == 0.0:
+					res['Sub_Avg'] = 0.0
+				self.fighters.append(res)		
 			else:
 				pass
-		print(res)
+			
+		# yield res
 
 if __name__ == '__main__':
     # run scraper

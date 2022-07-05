@@ -18,6 +18,7 @@ class StreamlitApp:
 
 	def __init__(self):
 		self.fighters = pd.read_csv('Data/UFC_Fighters_Database.csv')
+		# self.fighters2 = pd.read_csv('Data/fighters.csv')
 		self.fighters2 = pd.read_csv('Data/fighters.csv')
 		self.df2 = pd.read_csv('Data/prediction_data.csv', index_col="Unnamed: 0")
 
@@ -150,7 +151,8 @@ class StreamlitApp:
 				data1 = self.fighters2[self.fighters2.name == fighter1]
 				data2 = self.fighters2[self.fighters2.name == fighter2]
 
-				st.table(data1)
+				# st.table(data1)
+				# st.table(data2)
 
 				columns = ['REACH_delta','SLPM_delta','SAPM_delta','STRA_delta','STRD_delta','TD_delta','TDA_delta','TDD_delta','SUBA_delta','Odds_delta']
 				best_cols = ['SLPM_delta', 'SAPM_delta', 'STRD_delta', 'TDD_delta', 'SUBA_delta', 'Odds_delta']
@@ -281,32 +283,32 @@ class StreamlitApp:
 		return self
 
 
-def data_refresher_function(arg):
-	global sa
-	t = current_thread()
-	# Thread is alive by default
-	t.alive = True
+# def data_refresher_function(arg):
+# 	global sa
+# 	t = current_thread()
+# 	# Thread is alive by default
+# 	t.alive = True
 
-	while True:
-		if not t.alive:
-			break
+# 	while True:
+# 		if not t.alive:
+# 			break
 		
-		print("UPDATING FIGHTERS\n..............................................................")
-		call(["python", "ufcscraper.py"], stdout=DEVNULL, stderr=DEVNULL)
-		print("COMPLETED\n..............................................................")
+# 		print("UPDATING FIGHTERS\n..............................................................")
+# 		call(["python", "ufcscraper.py"], stdout=DEVNULL, stderr=DEVNULL)
+# 		print("COMPLETED\n..............................................................")
 
-		print("PREPARING DATA\n..............................................................")
-		call(["python", "sources/data_preparations.py"], stdout=DEVNULL, stderr=DEVNULL)
-		print("COMPLETED\n..............................................................")
+# 		print("PREPARING DATA\n..............................................................")
+# 		call(["python", "sources/data_preparations.py"], stdout=DEVNULL, stderr=DEVNULL)
+# 		print("COMPLETED\n..............................................................")
 
-		print("UPDATING STREAMLIT APP\n.................................................")
-		# sa.reconstruct()
-		# sa.construct_app()
-		# Wait for 12hours
-		# sleep(43200)
+# 		print("UPDATING STREAMLIT APP\n.................................................")
+# 		# sa.reconstruct()
+# 		# sa.construct_app()
+# 		# Wait for 12hours
+# 		# sleep(43200)
 
-data_refresher = Thread(target = data_refresher_function, args = (10, ))
-data_refresher.daemon = True
+# data_refresher = Thread(target = data_refresher_function, args = (10, ))
+# data_refresher.daemon = True
 
 try:
 	# data_refresher.start()
@@ -316,6 +318,6 @@ try:
 	
 	# data_refresher.join()
 except Exception as e:
-	data_refresher.alive = False
+	# data_refresher.alive = False
 	# sys.exit(e)
 	print(e)

@@ -1,21 +1,16 @@
 import json
 import string
 import pandas as pd
-from ufcpy import Fighter
+import json
 
-list_of_fighters = []
-letters = list(string.ascii_lowercase)
-real_list = []
+df1 = pd.read_json('Data/ufc_fighters.json')
 
-for x in letters:
-    fi = json.load(open(f"./Data/fighter/fighters-{x}.json", "r"))
-    list_of_fighters.append(fi)
+df = df1.drop_duplicates(subset="name", keep="first", inplace=False)
 
-for x in list_of_fighters:
-    for i in x:
-        i['name'] = str(i['fname'])+" "+i['lname']
-        real_list.append(i)
+saving = df.fillna(0.00, inplace=False)
 
-with open("results.json", 'w+') as f:
-    f.write(json.dumps(real_list, indent=2))
-    f.close()
+# print(saving.isna().sum())
+
+saving.to_csv('Data/fighters.csv')
+
+print('saved')
